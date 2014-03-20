@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1099D1618C1308F00333748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1099D1518C1308F00333748 /* Foundation.framework */; };
+		E1099D1B18C1308F00333748 /* ASPlaylistManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1099D1A18C1308F00333748 /* ASPlaylistManager.h */; };
+		E1099D1D18C1308F00333748 /* ASPlaylistManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1099D1C18C1308F00333748 /* ASPlaylistManager.m */; };
+		E1099D2418C1308F00333748 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1099D2318C1308F00333748 /* XCTest.framework */; };
+		E1099D2518C1308F00333748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1099D1518C1308F00333748 /* Foundation.framework */; };
+		E1099D2718C1308F00333748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1099D2618C1308F00333748 /* UIKit.framework */; };
+		E1099D2A18C1308F00333748 /* libASPlaylist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1099D1218C1308F00333748 /* libASPlaylist.a */; };
+		E1099D3018C1308F00333748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1099D2E18C1308F00333748 /* InfoPlist.strings */; };
+		E1099D3218C1308F00333748 /* ASPlaylistManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1099D3118C1308F00333748 /* ASPlaylistManagerTests.m */; };
+		E1099D3C18C1323C00333748 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1099D3B18C1323C00333748 /* libsqlite3.dylib */; };
+		E11B920418C13616000C2907 /* EGODatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B91FB18C13616000C2907 /* EGODatabase.m */; };
+		E11B920618C13616000C2907 /* EGODatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B91FD18C13616000C2907 /* EGODatabaseRequest.m */; };
+		E11B920818C13616000C2907 /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B91FF18C13616000C2907 /* EGODatabaseResult.m */; };
+		E11B920A18C13616000C2907 /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B920218C13616000C2907 /* EGODatabaseRow.m */; };
+		E11B920F18C137FB000C2907 /* ASPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B920E18C137FB000C2907 /* ASPlaylist.m */; };
+		E11B921018C137FB000C2907 /* ASPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B920E18C137FB000C2907 /* ASPlaylist.m */; };
+		E11B921118C138BD000C2907 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1099D3B18C1323C00333748 /* libsqlite3.dylib */; };
+		E11B921318C13942000C2907 /* ASPlaylistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E11B921218C13942000C2907 /* ASPlaylistTests.m */; };
+		E1485C0D18C146F100AEB4ED /* ASPlaylistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E1485C0C18C146F100AEB4ED /* ASPlaylistItem.m */; };
+		E1937F5218C38DA300A59A1D /* ASPlaylistItemTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E1937F5118C38DA300A59A1D /* ASPlaylistItemTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1099D2818C1308F00333748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1099D0A18C1308F00333748 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1099D1118C1308F00333748;
+			remoteInfo = ASPlaylist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1099D1018C1308F00333748 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E1099D1B18C1308F00333748 /* ASPlaylistManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E1099D1218C1308F00333748 /* libASPlaylist.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASPlaylist.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1099D1518C1308F00333748 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1099D1918C1308F00333748 /* ASPlaylist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASPlaylist-Prefix.pch"; sourceTree = "<group>"; };
+		E1099D1A18C1308F00333748 /* ASPlaylistManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASPlaylistManager.h; sourceTree = "<group>"; };
+		E1099D1C18C1308F00333748 /* ASPlaylistManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASPlaylistManager.m; sourceTree = "<group>"; };
+		E1099D2218C1308F00333748 /* ASPlaylistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASPlaylistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1099D2318C1308F00333748 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E1099D2618C1308F00333748 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1099D2D18C1308F00333748 /* ASPlaylistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASPlaylistTests-Info.plist"; sourceTree = "<group>"; };
+		E1099D2F18C1308F00333748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1099D3118C1308F00333748 /* ASPlaylistManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASPlaylistManagerTests.m; sourceTree = "<group>"; };
+		E1099D3B18C1323C00333748 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		E11B91FA18C13616000C2907 /* EGODatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabase.h; sourceTree = "<group>"; };
+		E11B91FB18C13616000C2907 /* EGODatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabase.m; sourceTree = "<group>"; };
+		E11B91FC18C13616000C2907 /* EGODatabaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRequest.h; sourceTree = "<group>"; };
+		E11B91FD18C13616000C2907 /* EGODatabaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRequest.m; sourceTree = "<group>"; };
+		E11B91FE18C13616000C2907 /* EGODatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseResult.h; sourceTree = "<group>"; };
+		E11B91FF18C13616000C2907 /* EGODatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseResult.m; sourceTree = "<group>"; };
+		E11B920018C13616000C2907 /* EGODatabaseResult_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseResult_Internal.h; sourceTree = "<group>"; };
+		E11B920118C13616000C2907 /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
+		E11B920218C13616000C2907 /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
+		E11B920318C13616000C2907 /* EGODatabaseRow_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow_Internal.h; sourceTree = "<group>"; };
+		E11B920D18C137FB000C2907 /* ASPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPlaylist.h; sourceTree = "<group>"; };
+		E11B920E18C137FB000C2907 /* ASPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPlaylist.m; sourceTree = "<group>"; };
+		E11B921218C13942000C2907 /* ASPlaylistTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPlaylistTests.m; sourceTree = "<group>"; };
+		E1485C0B18C146F100AEB4ED /* ASPlaylistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPlaylistItem.h; sourceTree = "<group>"; };
+		E1485C0C18C146F100AEB4ED /* ASPlaylistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPlaylistItem.m; sourceTree = "<group>"; };
+		E1937F5118C38DA300A59A1D /* ASPlaylistItemTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPlaylistItemTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1099D0F18C1308F00333748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1099D3C18C1323C00333748 /* libsqlite3.dylib in Frameworks */,
+				E1099D1618C1308F00333748 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1099D1F18C1308F00333748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11B921118C138BD000C2907 /* libsqlite3.dylib in Frameworks */,
+				E1099D2418C1308F00333748 /* XCTest.framework in Frameworks */,
+				E1099D2718C1308F00333748 /* UIKit.framework in Frameworks */,
+				E1099D2518C1308F00333748 /* Foundation.framework in Frameworks */,
+				E1099D2A18C1308F00333748 /* libASPlaylist.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1099D0918C1308F00333748 = {
+			isa = PBXGroup;
+			children = (
+				E1099D1718C1308F00333748 /* ASPlaylist */,
+				E1099D2B18C1308F00333748 /* ASPlaylistTests */,
+				E11B91F818C135F0000C2907 /* External Frameworks */,
+				E1099D1418C1308F00333748 /* Frameworks */,
+				E1099D1318C1308F00333748 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1099D1318C1308F00333748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1099D1218C1308F00333748 /* libASPlaylist.a */,
+				E1099D2218C1308F00333748 /* ASPlaylistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1099D1418C1308F00333748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1099D3B18C1323C00333748 /* libsqlite3.dylib */,
+				E1099D1518C1308F00333748 /* Foundation.framework */,
+				E1099D2318C1308F00333748 /* XCTest.framework */,
+				E1099D2618C1308F00333748 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1099D1718C1308F00333748 /* ASPlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				E11B920C18C137EB000C2907 /* Model */,
+				E1099D1A18C1308F00333748 /* ASPlaylistManager.h */,
+				E1099D1C18C1308F00333748 /* ASPlaylistManager.m */,
+				E1099D1818C1308F00333748 /* Supporting Files */,
+			);
+			path = ASPlaylist;
+			sourceTree = "<group>";
+		};
+		E1099D1818C1308F00333748 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1099D1918C1308F00333748 /* ASPlaylist-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1099D2B18C1308F00333748 /* ASPlaylistTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1099D3118C1308F00333748 /* ASPlaylistManagerTests.m */,
+				E11B921218C13942000C2907 /* ASPlaylistTests.m */,
+				E1937F5118C38DA300A59A1D /* ASPlaylistItemTest.m */,
+				E1099D2C18C1308F00333748 /* Supporting Files */,
+			);
+			path = ASPlaylistTests;
+			sourceTree = "<group>";
+		};
+		E1099D2C18C1308F00333748 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1099D2D18C1308F00333748 /* ASPlaylistTests-Info.plist */,
+				E1099D2E18C1308F00333748 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E11B91F818C135F0000C2907 /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E11B91F918C13616000C2907 /* EGODatabase */,
+			);
+			name = "External Frameworks";
+			sourceTree = "<group>";
+		};
+		E11B91F918C13616000C2907 /* EGODatabase */ = {
+			isa = PBXGroup;
+			children = (
+				E11B91FA18C13616000C2907 /* EGODatabase.h */,
+				E11B91FB18C13616000C2907 /* EGODatabase.m */,
+				E11B91FC18C13616000C2907 /* EGODatabaseRequest.h */,
+				E11B91FD18C13616000C2907 /* EGODatabaseRequest.m */,
+				E11B91FE18C13616000C2907 /* EGODatabaseResult.h */,
+				E11B91FF18C13616000C2907 /* EGODatabaseResult.m */,
+				E11B920018C13616000C2907 /* EGODatabaseResult_Internal.h */,
+				E11B920118C13616000C2907 /* EGODatabaseRow.h */,
+				E11B920218C13616000C2907 /* EGODatabaseRow.m */,
+				E11B920318C13616000C2907 /* EGODatabaseRow_Internal.h */,
+			);
+			name = EGODatabase;
+			path = "../../../Downloads/egodatabase-master/EGODatabase";
+			sourceTree = "<group>";
+		};
+		E11B920C18C137EB000C2907 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E11B920D18C137FB000C2907 /* ASPlaylist.h */,
+				E11B920E18C137FB000C2907 /* ASPlaylist.m */,
+				E1485C0B18C146F100AEB4ED /* ASPlaylistItem.h */,
+				E1485C0C18C146F100AEB4ED /* ASPlaylistItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1099D1118C1308F00333748 /* ASPlaylist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1099D3518C1308F00333748 /* Build configuration list for PBXNativeTarget "ASPlaylist" */;
+			buildPhases = (
+				E1099D0E18C1308F00333748 /* Sources */,
+				E1099D0F18C1308F00333748 /* Frameworks */,
+				E1099D1018C1308F00333748 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASPlaylist;
+			productName = ASPlaylist;
+			productReference = E1099D1218C1308F00333748 /* libASPlaylist.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E1099D2118C1308F00333748 /* ASPlaylistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1099D3818C1308F00333748 /* Build configuration list for PBXNativeTarget "ASPlaylistTests" */;
+			buildPhases = (
+				E1099D1E18C1308F00333748 /* Sources */,
+				E1099D1F18C1308F00333748 /* Frameworks */,
+				E1099D2018C1308F00333748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1099D2918C1308F00333748 /* PBXTargetDependency */,
+			);
+			name = ASPlaylistTests;
+			productName = ASPlaylistTests;
+			productReference = E1099D2218C1308F00333748 /* ASPlaylistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1099D0A18C1308F00333748 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Albert Schulz";
+			};
+			buildConfigurationList = E1099D0D18C1308F00333748 /* Build configuration list for PBXProject "ASPlaylist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E1099D0918C1308F00333748;
+			productRefGroup = E1099D1318C1308F00333748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1099D1118C1308F00333748 /* ASPlaylist */,
+				E1099D2118C1308F00333748 /* ASPlaylistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1099D2018C1308F00333748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1099D3018C1308F00333748 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1099D0E18C1308F00333748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11B920418C13616000C2907 /* EGODatabase.m in Sources */,
+				E11B920818C13616000C2907 /* EGODatabaseResult.m in Sources */,
+				E11B920A18C13616000C2907 /* EGODatabaseRow.m in Sources */,
+				E1485C0D18C146F100AEB4ED /* ASPlaylistItem.m in Sources */,
+				E11B920618C13616000C2907 /* EGODatabaseRequest.m in Sources */,
+				E1099D1D18C1308F00333748 /* ASPlaylistManager.m in Sources */,
+				E11B920F18C137FB000C2907 /* ASPlaylist.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1099D1E18C1308F00333748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1937F5218C38DA300A59A1D /* ASPlaylistItemTest.m in Sources */,
+				E1099D3218C1308F00333748 /* ASPlaylistManagerTests.m in Sources */,
+				E11B921318C13942000C2907 /* ASPlaylistTests.m in Sources */,
+				E11B921018C137FB000C2907 /* ASPlaylist.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1099D2918C1308F00333748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1099D1118C1308F00333748 /* ASPlaylist */;
+			targetProxy = E1099D2818C1308F00333748 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1099D2E18C1308F00333748 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1099D2F18C1308F00333748 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1099D3318C1308F00333748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E1099D3418C1308F00333748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1099D3618C1308F00333748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ASPlaylist.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASPlaylist/ASPlaylist-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E1099D3718C1308F00333748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ASPlaylist.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASPlaylist/ASPlaylist-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E1099D3918C1308F00333748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASPlaylist/ASPlaylist-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ASPlaylistTests/ASPlaylistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E1099D3A18C1308F00333748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASPlaylist/ASPlaylist-Prefix.pch";
+				INFOPLIST_FILE = "ASPlaylistTests/ASPlaylistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1099D0D18C1308F00333748 /* Build configuration list for PBXProject "ASPlaylist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1099D3318C1308F00333748 /* Debug */,
+				E1099D3418C1308F00333748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1099D3518C1308F00333748 /* Build configuration list for PBXNativeTarget "ASPlaylist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1099D3618C1308F00333748 /* Debug */,
+				E1099D3718C1308F00333748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1099D3818C1308F00333748 /* Build configuration list for PBXNativeTarget "ASPlaylistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1099D3918C1308F00333748 /* Debug */,
+				E1099D3A18C1308F00333748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1099D0A18C1308F00333748 /* Project object */;
+}
