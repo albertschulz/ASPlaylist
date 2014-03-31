@@ -9,3 +9,8 @@ Playlists are stored using sqlite3 into a file named playlist.sqlite
 ### Example Code
 
 You can find the basic usage in the tests. Please be aware of a writable databasePath when you initialize ASPlaylistManager
+
+This one should work:
+```objective-c
+[[ASPlaylistManager sharedInstance] setDatabasePath:NSTemporaryDirectory()];
+```
