@@ -13,6 +13,6 @@ You can find the basic usage in the tests. Please be aware of a writable databas
 This one should work:
 ```objective-c
 NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    NSString *libraryDirectory = [paths objectAtIndex:0];
-[[ASPlaylistManager sharedInstance] setDatabasePath: paths[0] ];
+NSString *libraryDirectory = paths[0];
+[[ASPlaylistManager sharedInstance] setDatabasePath: libraryDirectory ];
 ```
