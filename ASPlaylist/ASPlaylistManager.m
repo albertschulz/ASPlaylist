@@ -114,6 +114,25 @@
     return playlist;
 }
 
+- (ASPlaylist *)playlistForID:(NSString *)identifier
+{
+    EGODatabaseResult *result = [self.database executeQueryWithParameters:@"SELECT * FROM PLAYLISTS WHERE `id` = ?", identifier, nil];
+    
+    if (result.rows.count == 0)
+        return nil;
+    
+    EGODatabaseRow *row = result.firstRow;
+    
+    NSNumber *playlistID = @([row intForColumn:@"id"]);
+    NSString *playlistName = [row stringForColumn:@"name"];
+    
+    ASPlaylist *playlist = [[ASPlaylist alloc] initWithID:playlistID name:playlistName];
+    
+    playlist.items = [self itemsForPlaylist:playlist];
+    
+    return playlist;
+}
+
 - (BOOL)addItemToPlaylist:(ASPlaylist *)playlist itemName:(NSString *)name filePath:(NSString *)filePath
 {
     EGODatabaseResult *result = [self.database executeQueryWithParameters:@"INSERT INTO ITEMS (name, path, playlistID) VALUES (?,?, ?)", name, filePath, playlist.playlistID, nil];
@@ -186,6 +205,25 @@
     return (NSArray *)array;
 }
 
+- (NSArray *)playlistItems
+{
+    NSMutableArray *array = NSMutableArray.new;
+    
+    EGODatabaseResult *result = [self.database executeQuery:@"SELECT * FROM ITEMS;"];
+    
+    for (EGODatabaseRow *aRow in result.rows) {
+        
+        ASPlaylistItem *item = [[ASPlaylistItem alloc] initWithID:@([aRow intForColumn:@"id"])
+                                                             name:[aRow stringForColumn:@"name"]
+                                                             path:[aRow stringForColumn:@"path"]
+                                                         playlist:[self playlistForID:@"playlistID"]];
+        
+        [array addObject:item];
+    }
+    
+    return (NSArray *)array;
+}
+
 - (BOOL)playlistExistsWithName:(NSString *)name
 {
     
@@ -195,6 +233,23 @@
             exists = true;
     
     return exists;
+}
+
+- (NSArray *)searchPlaylistItems:(NSString *)term
+{
+    NSMutableArray *array = [NSMutableArray new];
+    
+    NSArray *items = [self playlistItems];
+    
+    for (ASPlaylistItem *anItem in items) {
+        
+        if ([anItem.name.lowercaseString rangeOfString:term.lowercaseString].location != NSNotFound) {
+            [array addObject:anItem];
+        }
+        
+    }
+    
+    return array;
 }
 
 @end

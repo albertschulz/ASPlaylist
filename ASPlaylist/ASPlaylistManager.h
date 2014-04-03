@@ -28,4 +28,6 @@
 - (BOOL)removeAllItemsFromPlaylist:(ASPlaylist *)playlist;
 - (BOOL)deleteFileAndPlaylistItemsForPath:(NSString *)path;
 
+- (NSArray *)searchPlaylistItems:(NSString *)term;
+
 @end
