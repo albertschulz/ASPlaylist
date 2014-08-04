@@ -16,6 +16,7 @@
 - (BOOL)changeName:(NSString *)name;
 - (BOOL)removeItem:(ASPlaylistItem *)item;
 - (BOOL)removeAllItems;
+- (void)reloadItems;
 
 @property (nonatomic, strong, readonly) NSNumber *playlistID;
 @property (nonatomic, strong, readonly) NSString *name;

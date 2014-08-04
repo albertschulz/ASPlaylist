@@ -60,4 +60,9 @@
     return success;
 }
 
+- (void)reloadItems
+{
+    self.items = [[ASPlaylistManager sharedInstance] playlistForName:self.name].items;
+}
+
 @end

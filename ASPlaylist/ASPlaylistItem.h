@@ -13,6 +13,7 @@
 @interface ASPlaylistItem : NSObject
 
 - (id)initWithID:(NSNumber *)itemID name:(NSString *)name path:(NSString *)filePath playlist:(ASPlaylist *)playlist;
+- (BOOL)changeName:(NSString *)name;
 - (BOOL)delete;
 
 @property (nonatomic, strong, readonly) NSNumber *itemID;

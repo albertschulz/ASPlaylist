@@ -8,6 +8,7 @@
 
 #import "ASPlaylistItem.h"
 #import "ASPlaylist.h"
+#import "ASPlaylistManager.h"
 
 @implementation ASPlaylistItem
 
@@ -38,6 +39,17 @@
 - (BOOL)delete
 {
     return [self.playlist removeItem:self];
+}
+
+- (BOOL)changeName:(NSString *)name
+{
+    BOOL success = [[ASPlaylistManager sharedInstance] changeNameForItem:self name:name];
+    
+    if (success) {
+        _name = name;
+    }
+    
+    return success;
 }
 
 @end

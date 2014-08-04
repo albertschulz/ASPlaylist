@@ -29,5 +29,6 @@
 - (BOOL)deleteFileAndPlaylistItemsForPath:(NSString *)path;
 
 - (NSArray *)searchPlaylistItems:(NSString *)term;
+- (BOOL)changeNameForItem:(ASPlaylistItem *)item name:(NSString *)name;
 
 @end
