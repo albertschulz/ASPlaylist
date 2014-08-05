@@ -89,6 +89,12 @@
     return success;
 }
 
+- (BOOL)changeFilePathOfItems:(NSString *)filePath withFilePath:(NSString *)currentFilePath
+{
+    BOOL success = [self.database executeUpdateWithParameters:@"UPDATE ITEMS SET `path` = ? WHERE `path` = ?", filePath, currentFilePath, nil];
+    return success;
+}
+
 - (ASPlaylistItem *)itemForName:(NSString *)name filePath:(NSString *)filePath
 {
     EGODatabaseResult *result = [self.database executeQueryWithParameters:@"SELECT * FROM ITEMS WHERE `name` = ? AND `path` = ?", name, filePath, nil];
