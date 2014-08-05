@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '6.0'
   spec.source       = {
     :git => "https://github.com/albertschulz/ASPlaylist.git",
-    :tag => "0.0.1"
+    :tag => "0.0.2"
   }
   spec.dependency   'EGODatabase'
 end
