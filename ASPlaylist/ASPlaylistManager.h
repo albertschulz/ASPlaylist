@@ -28,6 +28,8 @@
 - (BOOL)removeAllItemsFromPlaylist:(ASPlaylist *)playlist;
 - (BOOL)deleteFileAndPlaylistItemsForPath:(NSString *)path;
 
+- (BOOL)changeFilePathOfItems:(NSString *)filePath withFilePath:(NSString *)currentFilePath;
+
 - (NSArray *)searchPlaylistItems:(NSString *)term;
 - (BOOL)changeNameForItem:(ASPlaylistItem *)item name:(NSString *)name;
 
