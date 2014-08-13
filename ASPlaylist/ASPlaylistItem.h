@@ -17,7 +17,7 @@
 - (BOOL)delete;
 
 @property (nonatomic, strong, readonly) NSNumber *itemID;
-@property (nonatomic, weak, readonly) ASPlaylist *playlist;
+@property (nonatomic, strong, readonly) ASPlaylist *playlist;
 @property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) NSString *filePath;
 

@@ -265,14 +265,14 @@
 {
     NSMutableArray *array = NSMutableArray.new;
     
-    EGODatabaseResult *result = [self.database executeQuery:@"SELECT i.id AS id, i.name AS name, i.path, p.playlist_id AS playlistID AS path FROM PLAYLIST_ITEMS p LEFT JOIN ITEMS i ON p.item_id = i.id"];
+    EGODatabaseResult *result = [self.database executeQuery:@"SELECT i.id AS id, i.name AS name, i.path AS path, p.playlist_id AS playlistID  FROM PLAYLIST_ITEMS p LEFT JOIN ITEMS i ON p.item_id = i.id"];
     
     for (EGODatabaseRow *aRow in result.rows) {
         
         ASPlaylistItem *item = [[ASPlaylistItem alloc] initWithID:@([aRow intForColumn:@"id"])
                                                              name:[aRow stringForColumn:@"name"]
                                                              path:[aRow stringForColumn:@"path"]
-                                                         playlist:[self playlistForID:@"playlistID"]];
+                                                         playlist:[self playlistForID:[aRow stringForColumn:@"playlistID"]]];
         
         [array addObject:item];
     }
